@@ -83,7 +83,13 @@ function App() {
                 Nouvous is a premier web development and design agency
                 specializing in bespoke websites.
               </p>
-              <button className="text-white bg-zinc-800 mt-9  p-4 rounded-full px-6">
+              <a href="https://nouvous.com/" target="_blank"></a>
+              <button
+                onClick={() => {
+                  console.log("button Clicked");
+                }}
+                className="text-white bg-zinc-800 mt-9  p-4 rounded-full px-6"
+              >
                 Checkout ↗
               </button>
             </div>
