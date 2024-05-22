@@ -10,7 +10,8 @@ export default {
       lg: "1024px",
       lxg: "1190px",
       xl: "1280px",
-      "2xl": "1536px",
+      mxl: "1536px",
+      lxl: "1800px",
     },
     extend: {},
     fontFamily: {
