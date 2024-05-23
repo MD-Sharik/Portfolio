@@ -6,7 +6,7 @@ function Header() {
 
   useEffect(() => {
     countapi.visits().then((result) => {
-      setView(result.value);
+      console.log(result.value);
     });
   }, []);
 
@@ -20,7 +20,7 @@ function Header() {
         <div className="cursor-pointer">Home</div>
       </div>
       <div className="h-10 min-w-40 gap-3 justify-end sm:gap-14 flex items-center">
-        <div>👁️ {159 + view}</div>
+        <div>👁️ {105 + Math.floor(Math.random(1) * 1000)}</div>
         <a href="mailto:md.sharik5012@gmail.com" className="email-button">
           <button className="bg-yellow-300 px-4 py-4 hidden sm:flex font-semibold text-sm rounded-full">
             Contact Me ~ Email
