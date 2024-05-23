@@ -5,6 +5,7 @@ import Spline from "@splinetool/react-spline";
 
 function App() {
   const testimonials = testimonialsData();
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextTestimonial = () => {
@@ -39,8 +40,8 @@ function App() {
             <div className=" bg-lime-300 py-6 px-5 rounded-2xl w-fit text-4xl sm:text-3xl md:text-4xl xl:text-5xl lxl:text-6xl font-medium">
               Hey, I'm Sharik
             </div>
-            <div className="  font-medium text-4xl sm:text-3xl md:text-4xl xl:text-5xl lxl:text-6xl">
-              Full Stack Developer
+            <div className="  font-medium text-4xl mt-2 sm:text-3xl md:text-4xl xl:text-5xl lxl:text-6xl">
+              A Full Stack Developer
             </div>
           </div>
           <div className="md:w-[60ch] w-[90vw] font-normal xl:text-2xl lxl:text-3xl m-auto mt-10">
@@ -52,7 +53,7 @@ function App() {
           </div>
         </div>
         {/* FULLSTACK */}
-        <div className="m-auto bg-white md:mt-[6rem] rounded-2xl font-medium sm:text-xl sm: w-[90vw] md:text-3xl flex justify-between md:w-[60vw] items-center py-8 px-10">
+        <div className="m-auto bg-white md:mt-[6rem] rounded-2xl font-medium sm:text-xl sm: w-[90vw] md:text-3xl flex justify-between smd:w-[60vw] items-center py-8 px-10">
           <div>FRONTEND</div>
           <div>BACKEND</div>
           <div>UI/UX</div>
@@ -60,7 +61,7 @@ function App() {
         </div>
         {/* ABOUT */}
         <div className="flex justify-center">
-          <div className="flex justify-between flex-col sm:items-start sm:ml-0 sm:flex-row sm:w-[90vw] md:w-[70vw] smd:w-[60vw] min-h-[18rem]  sm:mt-24 ">
+          <div className="flex justify-between flex-col sm:items-start sm:ml-0 sm:flex-row sm:w-[90vw] smd:w-[60vw] min-h-[18rem]  sm:mt-24 ">
             <div className="w-[90vw] sm:w-[58%] my-14 sm:my-0 h-full   md:mb-0 bg-white rounded-2xl px-8 lg:px-14 py-8">
               <h2 className="text-3xl font-semibold">
                 Professional Experience
@@ -83,15 +84,16 @@ function App() {
                 Nouvous is a premier web development and design agency
                 specializing in bespoke websites.
               </p>
-              <a href="https://nouvous.com/" target="_blank"></a>
-              <button
-                onClick={() => {
-                  console.log("button Clicked");
-                }}
-                className="text-white bg-zinc-800 mt-9  p-4 rounded-full px-6"
-              >
-                Checkout ↗
-              </button>
+              <a href="https://www.nouvous.com/" target="_blank">
+                <button
+                  onClick={() => {
+                    console.log("button Clicked");
+                  }}
+                  className="text-white bg-zinc-800 mt-9  p-4 rounded-full px-6"
+                >
+                  Checkout ↗
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -164,7 +166,7 @@ function App() {
                 <div className="text-xl">A crypto wallet web app</div>
               </div>
               <a href="https://crypto-256.vercel.app/" target="_blank">
-                <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
+                <div className="px-7 py-5 border-2 hover:border-black cursor-none rounded-full">
                   ↗
                 </div>
               </a>

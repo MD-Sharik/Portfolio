@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import About from "./About.jsx";
 import {
   Route,
   createBrowserRouter,
@@ -15,7 +14,6 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<App />} />
-      <Route path="/about" element={<About />} />
     </Route>
   )
 );
