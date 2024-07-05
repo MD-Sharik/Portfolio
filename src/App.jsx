@@ -53,7 +53,7 @@ function App() {
           </div>
         </div>
         {/* FULLSTACK */}
-        <div className="m-auto bg-white md:mt-[6rem] rounded-2xl font-medium sm:text-xl sm: w-[90vw] md:text-3xl flex justify-between smd:w-[60vw] items-center py-8 px-10">
+        <div className="m-auto mt-[6rem] bg-white md:mt-[6rem] rounded-2xl font-medium sm:text-xl sm: w-[90vw] md:text-3xl flex justify-between smd:w-[60vw] items-center py-8 px-10">
           <div>FRONTEND</div>
           <div>BACKEND</div>
           <div>UI/UX</div>
