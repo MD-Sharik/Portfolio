@@ -99,6 +99,71 @@ function App() {
         </div>
         {/* Projects */}
         <div>
+          {/* FIC */}
+          <div className="bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
+            <div className="flex justify-between h-[30%] py-10 px-8 bg ">
+              <div className="">
+                <div className="text-3xl font-semibold">First India Credit</div>
+                <div className="text-xl">A loan management CRM</div>
+              </div>
+              <a href="https://crm.firstindiacredit.com/" target="_blank">
+                <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
+                  ↗
+                </div>
+              </a>
+            </div>
+            <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
+              <div className="xl:bg-zinc-100 -translate-y-4 z-10 py-8 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
+                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
+                  <img
+                    width={500}
+                    className="rounded-xl "
+                    src="Img3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
+                <div>
+                  <h2 className="text-3xl font-semibold mb-2">FIC</h2>
+
+                  <p className="text-justify truncate smd:text-wrap">
+                    FIC is a laon management web based CRM app developed on the
+                    MERN stack. It offers users a seamless experience to apply
+                    for loans, check loan status and get notifications. With its
+                    user friendly interface and robust backend infrastructure,
+                    FIC simplifies the loan process & provides a wide selection
+                    of loans.
+                  </p>
+
+                  <div className="flex flex-wrap mt-4 overflow-y-hidden">
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      React
+                    </span>
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      MongoDB
+                    </span>
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      Node
+                    </span>
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      Express
+                    </span>
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      JavaScript
+                    </span>
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      JWT
+                    </span>
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      Tailwind
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Carrento */}
           <div className="bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
             <div className="flex justify-between h-[30%] py-10 px-8 bg ">
               <div className="">
@@ -112,7 +177,7 @@ function App() {
               </a>
             </div>
             <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
-              <div className="xl:bg-zinc-100 -translate-y-4 z-10 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
+              <div className="xl:bg-zinc-100 py-8 -translate-y-4 z-10 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
                 <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
                   <img
                     width={500}
@@ -159,6 +224,7 @@ function App() {
               </div>
             </div>
           </div>
+          {/* Crypto-256 */}
           <div className="bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
             <div className="flex justify-between h-[30%] py-10 px-8 bg ">
               <div className="">
@@ -172,7 +238,7 @@ function App() {
               </a>
             </div>
             <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
-              <div className="xl:bg-zinc-100 -translate-y-4 z-10 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
+              <div className="xl:bg-zinc-100 py-8 -translate-y-4 z-10 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
                 <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
                   <img
                     width={500}

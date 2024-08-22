@@ -4,7 +4,7 @@ const testimonials = () => {
       name: "Mohd Afzal",
       company: "First India Credit",
       testimonial:
-        "The web development service provided by Md Sharik was exceptional. Our website is now fast, responsive, and visually appealing. It has significantly improved our online presence and client engagement.",
+        "The web app service provided by Md Sharik was exceptional. Our CRM app is fast, responsive, and visually appealing. It has significantly improved our online presence and client engagement.",
     },
     {
       name: "Matin",
