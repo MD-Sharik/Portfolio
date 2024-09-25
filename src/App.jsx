@@ -37,8 +37,9 @@ function App() {
         {/* NAME */}
         <div className="w-full h-64 text-center">
           <div className=" flex flex-col items-center">
-            <div className=" bg-lime-300 py-6 px-5 rounded-2xl w-fit text-4xl sm:text-3xl md:text-4xl xl:text-5xl lxl:text-6xl font-medium">
+            <div className=" bg-lime-300  py-6 px-8 shadow-inner  rounded-2xl w-fit text-4xl sm:text-3xl md:text-4xl xl:text-5xl lxl:text-6xl font-medium mb-4">
               Hey, I'm Sharik
+              {/* MD SHARIK */}
             </div>
             <div className="  font-medium text-4xl mt-2 sm:text-3xl md:text-4xl xl:text-5xl lxl:text-6xl">
               A Full Stack Developer
@@ -62,15 +63,27 @@ function App() {
         {/* ABOUT */}
         <div className="flex justify-center">
           <div className="flex justify-between flex-col sm:items-start sm:ml-0 sm:flex-row sm:w-[90vw] smd:w-[60vw] min-h-[18rem]  sm:mt-24 ">
-            <div className="w-[90vw] sm:w-[58%] my-14 sm:my-0 h-full   md:mb-0 bg-white rounded-2xl px-8 lg:px-14 py-8">
+            <div className="w-[90vw] sm:w-[65%] my-14 flex flex-col justify-between sm:my-0 h-full   md:mb-0 bg-white rounded-2xl px-8 lg:px-14 py-8">
               <h2 className="text-3xl font-semibold">
                 Professional Experience
               </h2>
-              <p className="xl:max-w-[40ch] lxl:min-w-[60ch] overflow-y-hidden text-ellipsis mt-4">
-                I'm MD Sharik, the founder of Nouvous and a Full Stack Developer
+              <p className="xl:max-w-[43ch] lxl:min-w-[63ch] overflow-y-hidden text-ellipsis mt-4">
+                {/* I'm MD Sharik, the founder of Nouvous and a Full Stack Developer
                 at PizeonFly. With a passion for creating innovative web
                 solutions, I lead Nouvous in delivering exceptional websites and
-                user experiences for businesses looking to thrive online.
+                user experiences for businesses looking to thrive online. */}
+                <ul className="list-disc list-inside">
+                  <li>Over 10 months of experience at PizeonFly</li>
+                  <li>
+                    Built multiple scalable and production-ready websites and
+                    products
+                  </li>
+                  <li>Led a team of 4 people</li>
+                  <li>
+                    Built innovative web solutions and exceptional user
+                    experiences
+                  </li>
+                </ul>
               </p>
               <div className="mt-4">
                 <button className="bg-black text-white px-5 rounded-full py-3">
@@ -78,20 +91,19 @@ function App() {
                 </button>
               </div>
             </div>
-            <div className="w-[90vw] sm:w-[39%] bg-zinc-900  h-full rounded-2xl px-8 lg:px-14 py-8 text-white">
-              <h2 className="text-2xl font-medium my-4">About Nouvous.</h2>
+            <div className="w-[90vw] sm:w-[32%] bg-zinc-900  h-full rounded-2xl px-8 lg:px-14 py-8 text-white">
+              <h2 className="text-2xl font-medium my-4">Download Resume</h2>
               <p className="xl:max-w-[40ch] text-zinc-400 overflow-ellipsis">
-                Nouvous is a premier web development and design agency
-                specializing in bespoke websites.
+                Want to know more? Download my resume to know more about me.
               </p>
-              <a href="https://www.nouvous.com/" target="_blank">
+              <a href="resume.pdf" download>
                 <button
                   onClick={() => {
                     console.log("button Clicked");
                   }}
                   className="text-white bg-zinc-800 mt-9  p-4 rounded-full px-6"
                 >
-                  Checkout ↗
+                  Download
                 </button>
               </a>
             </div>
@@ -99,6 +111,77 @@ function App() {
         </div>
         {/* Projects */}
         <div>
+          {/* PRODHUNT */}
+          <div className="bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
+            <div className="flex justify-between h-[30%] py-10 px-8 bg ">
+              <div className="">
+                <div className="text-3xl font-semibold">PRODHUNT</div>
+                <div className="text-xl">Chrome Extension</div>
+              </div>
+              <a
+                href="https://chromewebstore.google.com/detail/prodhunt/giopdckkeeonachenpcafdcomeiocelh"
+                target="_blank"
+              >
+                <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
+                  ↗
+                </div>
+              </a>
+            </div>
+            <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
+              <div className="xl:bg-zinc-100 -translate-y-4 z-10 py-8 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
+                <a
+                  href="https://chromewebstore.google.com/detail/prodhunt/giopdckkeeonachenpcafdcomeiocelh"
+                  target="_blank"
+                >
+                  <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
+                    <img
+                      width={500}
+                      className="rounded-xl "
+                      src="PRODHUNT.png"
+                      alt="prodhunt"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
+                <div>
+                  <h2 className="text-3xl font-semibold mb-2">PRODHUNT</h2>
+
+                  <p className="text-justify truncate smd:text-wrap">
+                    prodhunt is a simple and powerful tool that lets you stay
+                    updated with the latest and most popular products from
+                    Product Hunt. With just one click, you can access the top 50
+                    products of the day, complete with their titles,
+                    descriptions, categories, and direct links to the
+                    ProductHunt page.
+                  </p>
+
+                  <div className="flex flex-wrap mt-4 overflow-y-hidden">
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      Cheerio.js
+                    </span>
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      Express
+                    </span>
+
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      Node
+                    </span>
+
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      JavaScript
+                    </span>
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      HTML
+                    </span>
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      CSS
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           {/* FIC */}
           <div className="bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
             <div className="flex justify-between h-[30%] py-10 px-8 bg ">
@@ -114,14 +197,16 @@ function App() {
             </div>
             <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
               <div className="xl:bg-zinc-100 -translate-y-4 z-10 py-8 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
-                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
-                  <img
-                    width={500}
-                    className="rounded-xl "
-                    src="Img3.png"
-                    alt=""
-                  />
-                </div>
+                <a href="https://crm.firstindiacredit.com/" target="_blank">
+                  <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
+                    <img
+                      width={500}
+                      className="rounded-xl "
+                      src="Img3.png"
+                      alt=""
+                    />
+                  </div>
+                </a>
               </div>
               <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
                 <div>
@@ -178,14 +263,19 @@ function App() {
             </div>
             <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
               <div className="xl:bg-zinc-100 py-8 -translate-y-4 z-10 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
-                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
-                  <img
-                    width={500}
-                    className="rounded-xl "
-                    src="Img.png"
-                    alt=""
-                  />
-                </div>
+                <a
+                  href="https://car-rental-chi-tan.vercel.app/"
+                  target="_blank"
+                >
+                  <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
+                    <img
+                      width={500}
+                      className="rounded-xl "
+                      src="Img.png"
+                      alt=""
+                    />
+                  </div>
+                </a>
               </div>
               <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
                 <div>
@@ -239,14 +329,16 @@ function App() {
             </div>
             <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
               <div className="xl:bg-zinc-100 py-8 -translate-y-4 z-10 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
-                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
-                  <img
-                    width={500}
-                    className="rounded-xl "
-                    src="Img2.png"
-                    alt=""
-                  />
-                </div>
+                <a href="https://crypto-256.vercel.app/" target="_blank">
+                  <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
+                    <img
+                      width={500}
+                      className="rounded-xl "
+                      src="Img2.png"
+                      alt=""
+                    />
+                  </div>
+                </a>
               </div>
               <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
                 <div>
