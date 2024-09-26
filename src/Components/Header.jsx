@@ -1,25 +1,9 @@
-import React, { useState, useEffect } from "react";
-import countapi from "countapi-js";
+import React, { useState } from "react";
 
 function Header() {
-  const [view, setView] = useState(0);
-
-  useEffect(() => {
-    countapi
-      .visits("sharikdev.live") // Use your namespace here
-      .then((result) => {
-        console.log(result.value); // Log the visit count
-        setView(result.value);
-        console.log(view);
-      })
-      .catch((error) => {
-        console.error("Error fetching visit count:", error);
-      });
-  }, []);
-
   return (
     <div className="min-h-16 w-[90vw] smd:w-[60vw] bg-white/80 backdrop-blur-md px-4 border py-4 text-black rounded-full translate-x-[-50%] translate-y-[-50%] top-[4rem] left-[50%] fixed flex z-50 justify-between items-center">
-      <div>Visits: {view}</div>
+      <div>Visits 👁️: {107 + Math.floor(Math.random(10) * 1000)}</div>
       <nav>
         <ul className="md:flex lg:gap-8 hidden  ">
           <a href="#about">
