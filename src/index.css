@@ -18,3 +18,7 @@
     color: white;
     background: black;
 }
+
+html {
+    scroll-behavior: smooth;
+}

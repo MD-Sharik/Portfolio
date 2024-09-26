@@ -7,7 +7,6 @@ function App() {
   const testimonials = testimonialsData();
 
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
@@ -61,18 +60,14 @@ function App() {
           <div>3D</div>
         </div>
         {/* ABOUT */}
-        <div className="flex justify-center">
+        <div id="about" className="flex justify-center">
           <div className="flex justify-between flex-col sm:items-start sm:ml-0 sm:flex-row sm:w-[90vw] smd:w-[60vw] min-h-[18rem]  sm:mt-24 ">
             <div className="w-[90vw] sm:w-[65%] my-14 flex flex-col justify-between sm:my-0 h-full   md:mb-0 bg-white rounded-2xl px-8 lg:px-14 py-8">
               <h2 className="text-3xl font-semibold">
                 Professional Experience
               </h2>
-              <p className="xl:max-w-[43ch] lxl:min-w-[63ch] overflow-y-hidden text-ellipsis mt-4">
-                {/* I'm MD Sharik, the founder of Nouvous and a Full Stack Developer
-                at PizeonFly. With a passion for creating innovative web
-                solutions, I lead Nouvous in delivering exceptional websites and
-                user experiences for businesses looking to thrive online. */}
-                <ul className="list-disc list-inside">
+              <h4 className="xl:max-w-[43ch] lxl:min-w-[63ch] overflow-y-hidden text-ellipsis mt-4">
+                <div className="list-disc list-inside">
                   <li>Over 10 months of experience at PizeonFly</li>
                   <li>
                     Built multiple scalable and production-ready websites and
@@ -83,8 +78,8 @@ function App() {
                     Built innovative web solutions and exceptional user
                     experiences
                   </li>
-                </ul>
-              </p>
+                </div>
+              </h4>
               <div className="mt-4">
                 <button className="bg-black text-white px-5 rounded-full py-3">
                   Contact Me ~ Its Free
@@ -96,7 +91,7 @@ function App() {
               <p className="xl:max-w-[40ch] text-zinc-400 overflow-ellipsis">
                 Want to know more? Download my resume to know more about me.
               </p>
-              <a href="resume.pdf" download>
+              <a href="MDSHARIK_RESUME.pdf" download>
                 <button
                   onClick={() => {
                     console.log("button Clicked");
@@ -110,7 +105,7 @@ function App() {
           </div>
         </div>
         {/* Projects */}
-        <div>
+        <div id="projects">
           {/* PRODHUNT */}
           <div className="bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
             <div className="flex justify-between h-[30%] py-10 px-8 bg ">
@@ -390,7 +385,10 @@ function App() {
           </a>
         </div>
         {/* Testimonial */}
-        <div className="mt-16 m-auto rounded-3xl min-h-[20rem] flex items-center w-[90vw] py-4 smd:py-0 smd:w-[60vw] bg-white">
+        <div
+          id="testimonial"
+          className="mt-16 m-auto rounded-3xl min-h-[20rem] flex items-center w-[90vw] py-4 smd:py-0 smd:w-[60vw] bg-white"
+        >
           <div className="flex justify-between items-center h-full px-2 smd:px-10">
             <button
               onClick={prevTestimonial}
@@ -416,7 +414,10 @@ function App() {
           </div>
         </div>
         {/* HIRE ME*/}
-        <div className="w-[90vw] smd:w-[60vw] flex justify-center flex-col items-center bg-white min-h-[25rem] rounded-3xl m-auto mt-14">
+        <div
+          id="contact"
+          className="w-[90vw] smd:w-[60vw] flex justify-center flex-col items-center bg-white min-h-[25rem] rounded-3xl m-auto mt-14"
+        >
           <div className="text-2xl sm:text-3xl smd:text-5xl font-medium border-2 px-4 py-3 rounded-full">
             Want to Start
           </div>
