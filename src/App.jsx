@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import testimonialsData from "./Components/test.js";
 import Spline from "@splinetool/react-spline";
-
+import countapi from "countapi-js";
+import { useEffect } from "react";
 function App() {
   const testimonials = testimonialsData();
 
@@ -15,6 +16,17 @@ function App() {
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
   };
+
+  useEffect(() => {
+    countapi
+      .visits("sharikdev.live") // Use your namespace directly
+      .then((result) => {
+        console.log(result.value);
+      })
+      .catch((error) => {
+        console.error("Error fetching visit count:", error.message);
+      });
+  }, []);
 
   return (
     <>
