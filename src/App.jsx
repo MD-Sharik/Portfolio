@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import testimonialsData from "./Components/test.js";
-import Spline from "@splinetool/react-spline";
+import Footer from "./Components/Footer.jsx";
+// import Spline from "@splinetool/react-spline";
 // import countapi from "countapi-js";
 // import { useEffect } from "react";
 function App() {
@@ -13,43 +14,28 @@ function App() {
   };
   const prevTestimonial = () => {
     setCurrentIndex((prevIndex) =>
+      // a
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
   };
 
   return (
     <>
-      <div className="bg-zinc-100 pt-[8rem] sm:pt-[15rem] relative min-h-screen">
-        {/* 3d */}
-        <div>
-          <Spline
-            className="absolute z-30 mxl:-left-72 -top-36 sm:inline-block hidden  md:-left-80 sm:-left-[22rem]  "
-            style={{ width: "900px", height: "900px", scale: "0.2" }}
-            scene="https://prod.spline.design/HWjSTbL080re0NUk/scene.splinecode"
-          />
-          <Spline
-            className="absolute z-30 mxl:-right-24 top-14 sm:inline-block hidden  xl:-right-24 lg:-right-36 md:-right-40 sm:-right-[10rem] "
-            style={{ width: "500px", height: "500px", scale: "0.35" }}
-            scene="https://prod.spline.design/xhS-ZgGiuDHZ1Fnb/scene.splinecode"
-          />
-        </div>
-
-        {/* NAME */}
+      <div className="bg-gradient-to-b from-slate-200 to-slate-200 pt-[8rem] sm:pt-[15rem] relative min-h-screen">
         <div className="w-full h-64 text-center">
           <div className=" flex flex-col items-center">
-            <div className=" bg-lime-300  py-6 px-8 shadow-inner  rounded-2xl w-fit text-4xl sm:text-3xl md:text-4xl xl:text-5xl lxl:text-6xl font-medium mb-4">
-              Hey, I'm Sharik
+            <div className=" bg-slate-300 text-slate-600  py-6 px-12  rounded-2xl w-fit text-4xl sm:text-3xl md:text-4xl xl:text-5xl lxl:text-6xl font-medium mb-4">
+              MD SHARIK
               {/* MD SHARIK */}
             </div>
-            <div className="  font-medium text-4xl mt-2 sm:text-3xl md:text-4xl xl:text-5xl lxl:text-6xl">
-              A Full Stack Developer
+            <div className="  font-medium text-2xl mt-2 sm:text-3xl md:text-2xl xl:text-5xl lxl:text-4xl">
+              SOFTWARE ENGINEER
             </div>
           </div>
-          <div className="md:w-[60ch] w-[90vw] font-normal xl:text-2xl lxl:text-3xl m-auto mt-10">
+          <div className="md:w-[60ch] w-[90vw]  xl:text-xl lxl:text-xl m-auto mt-10">
             <p>
-              Fullstack enthusiast excelling in crafting user-friendly digital
-              landscapes. Relishes solving complex challenges with efficiency
-              and flair.
+              Fullstack enthusiast and indie hacker, excelling at solving
+              complex challenges and love building usefull products.
             </p>
           </div>
         </div>
@@ -107,6 +93,70 @@ function App() {
         </div>
         {/* Projects */}
         <div id="projects">
+          {/* FINDPIN */}
+          <div className="bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
+            <div className="flex justify-between h-[30%] py-10 px-8 bg ">
+              <div className="">
+                <div className="text-3xl font-semibold">FINDPIN</div>
+                <div className="text-xl">A zip code finder web app</div>
+              </div>
+              <a href="https://findpin.nouvous.com" target="_blank">
+                <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
+                  ↗
+                </div>
+              </a>
+            </div>
+            <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
+              <div className="xl:bg-zinc-100 -translate-y-4 z-10 py-8 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
+                <a href="https://findpin.nouvous.com" target="_blank">
+                  <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
+                    <img
+                      width={500}
+                      className="rounded-xl "
+                      src="findpin.png"
+                      alt="findpin"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
+                <div>
+                  <h2 className="text-3xl font-semibold mb-2">FINDPIN</h2>
+
+                  <p className="text-justify truncate smd:text-wrap">
+                    FindPin is a simple and powerful tool that lets you easily
+                    search areas by pincode or find pincodes by area name.
+                    Covering countries like the USA, India, Canada, and
+                    Australia, FindPin helps you quickly locate regions or
+                    postal codes with just a few clicks.
+                  </p>
+
+                  <div className="flex flex-wrap mt-4 overflow-y-hidden">
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      Rest API
+                    </span>
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      Tailwind
+                    </span>
+
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      React
+                    </span>
+
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      JavaScript
+                    </span>
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      HTML
+                    </span>
+                    <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
+                      CSS
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           {/* PRODHUNT */}
           <div className="bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
             <div className="flex justify-between h-[30%] py-10 px-8 bg ">
@@ -426,7 +476,7 @@ function App() {
             a Project?
           </div>
           <a href="mailto:md.sharik5012@gmail.com" className="email-button">
-            <div className="text-lg smd:text-2xl mt-8 bg-lime-300 w-[10rem] smd:w-[12rem] cursor-pointer py-2 px-1 rounded-full flex ">
+            <div className="text-lg smd:text-2xl mt-8 bg-zinc-300 w-[10rem] smd:w-[12rem] cursor-pointer py-2 px-1 rounded-full flex ">
               <div className="flex items-center pl-4 w-[80%] justify-center">
                 <div>Lets's Talk</div>
               </div>
@@ -445,6 +495,7 @@ function App() {
             </div>
           </a>
         </div>
+        <Footer />
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Header() {
   return (
@@ -22,10 +22,10 @@ function Header() {
       </nav>
 
       <a href="mailto:md.sharik5012@gmail.com" className="email-button">
-        <button className="bg-yellow-300 px-4 py-4 hidden sm:flex font-semibold text-sm rounded-full">
-          Contact Me ~ Email
+        <button className="bg-zinc-900 transition-all hover:bg-zinc-800 px-4 py-4 text-white hidden sm:flex font-semibold text-sm rounded-full">
+          Contact Me
         </button>
-        <div className="bg-yellow-300 px-[0.65rem] py-[0.7rem] sm:hidden rounded-full flex items-center justify-center">
+        <div className="bg-black px-[0.65rem] py-[0.7rem] sm:hidden rounded-full flex items-center justify-center">
           <img
             className="block h-4 w-5 sm:hidden translate-x-[1px]"
             src="https://img.icons8.com/android/96/000000/paper-plane.png"
