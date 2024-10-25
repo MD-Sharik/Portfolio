@@ -21,7 +21,7 @@ function Header() {
         </ul>
       </nav>
 
-      <a href="mailto:md.sharik5012@gmail.com" className="email-button">
+      <a href="https://api.whatsapp.com/send/?phone=%2B919582375386&text=Hello,%20Sharik&type=phone_number&app_absent=1">
         <button className="bg-zinc-900 transition-all hover:bg-zinc-800 px-4 py-4 text-white hidden sm:flex font-semibold text-sm rounded-full">
           Contact Me
         </button>

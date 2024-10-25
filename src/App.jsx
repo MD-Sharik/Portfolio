@@ -2,9 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import testimonialsData from "./Components/test.js";
 import Footer from "./Components/Footer.jsx";
-// import Spline from "@splinetool/react-spline";
-// import countapi from "countapi-js";
-// import { useEffect } from "react";
 function App() {
   const testimonials = testimonialsData();
 
@@ -24,7 +21,7 @@ function App() {
       <div className="bg-gradient-to-b from-slate-200 to-slate-200 pt-[8rem] sm:pt-[15rem] relative min-h-screen">
         <div className="w-full h-64 text-center">
           <div className=" flex flex-col items-center">
-            <div className=" bg-slate-300 text-slate-600  py-6 px-12  rounded-2xl w-fit text-4xl sm:text-3xl md:text-4xl xl:text-5xl lxl:text-6xl font-medium mb-4">
+            <div className=" bg-zinc-950 text-white  py-6 px-12  rounded-2xl w-fit text-4xl sm:text-3xl md:text-4xl xl:text-5xl lxl:text-6xl font-medium mb-4">
               MD SHARIK
               {/* MD SHARIK */}
             </div>
@@ -34,7 +31,7 @@ function App() {
           </div>
           <div className="md:w-[60ch] w-[90vw]  xl:text-xl lxl:text-xl m-auto mt-10">
             <p>
-              Fullstack enthusiast and indie hacker, excelling at solving
+              Fullstack Enthusiast and Indie Hacker, excelling at solving
               complex challenges and love building usefull products.
             </p>
           </div>
@@ -475,7 +472,10 @@ function App() {
           <div className="text-2xl sm:text-3xl smd:text-5xl font-medium mt-6 border-2 px-4 py-3 rounded-full">
             a Project?
           </div>
-          <a href="mailto:md.sharik5012@gmail.com" className="email-button">
+          <a
+            href="https://api.whatsapp.com/send/?phone=%2B919582375386&text=Hello,%20Sharik&type=phone_number&app_absent=1"
+            target="_blank"
+          >
             <div className="text-lg smd:text-2xl mt-8 bg-zinc-300 w-[10rem] smd:w-[12rem] cursor-pointer py-2 px-1 rounded-full flex ">
               <div className="flex items-center pl-4 w-[80%] justify-center">
                 <div>Lets's Talk</div>
