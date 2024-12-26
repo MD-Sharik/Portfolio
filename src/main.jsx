@@ -9,6 +9,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Layout from "./Components/Layout.jsx";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,8 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );

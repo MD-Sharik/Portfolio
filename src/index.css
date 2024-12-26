@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 ::-moz-selection {
     /* Code for Firefox */
     color: white;
@@ -17,8 +29,4 @@
     /* Code for Firefox */
     color: white;
     background: black;
-}
-
-html {
-    scroll-behavior: smooth;
 }
