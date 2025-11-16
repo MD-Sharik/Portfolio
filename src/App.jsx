@@ -18,6 +18,189 @@ function App() {
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
   };
+const groups = [
+    {
+      title: "FRONTEND",
+      items: [
+        "React",
+        "React Native",
+        "Next.js",
+        "Redux",
+        "Tailwind",
+        "JoyUI",
+        "AntD",
+        "MUI",
+        "Shadcn",
+        "Bootstrap",
+      ],
+    },
+    {
+      title: "BACKEND & DB",
+      items: [
+        "Node.js",
+        "Express",
+        "REST APIs",
+        "GraphQL",
+        "Redis",
+        "BullMQ",
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "Firebase",
+        "JWT",
+        "Zod",
+      ],
+    },
+    {
+      title: "DEVOPS & INFRA",
+      items: [
+        "Git",
+        "Docker",
+        "AWS EC2",
+        "Azure VM",
+        "Nginx",
+        "Linux",
+        "Azure Blob Storage",
+        "Ngrok",
+        "LDAPjs",
+        "Entra ID / Microsoft AD",
+      ],
+    },
+    {
+      title: "AI / TOOLS / MISC",
+      items: [
+        "Generative AI",
+        "Gemini",
+        "React Native",
+        "JoyUI",
+        "Shadcn",
+        "Jwt",
+        "Ngrok",
+      ],
+    },
+    {
+      title: "Languages",
+      items: [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "SQL",
+        "Java",
+        
+      ],
+    },
+  ];
+
+const projectList = [
+  {
+      title: "Repurpose",
+      subtitle: "Turn AI ideas into shorts",
+      img: "repurpose.png",
+      href: "https://repurpose.nouvous.com",
+      desc:
+        "Repurpose is a platform that turns AI ideas into engaging short videos quickly and easily.",
+      tags: ["AI", "Shadcn", "React", "Express", "Node", "Postgresql", "Redis","BullMQ"],
+    },{
+      title: "SuperDark",
+      subtitle: "Brightness control app for mobile",
+      img: "superdark.png",
+      href: "https://superdark.nouvous.com",
+      desc:
+        "Super Dark turns your phone into a midnight ninja. It reduces screen brightness beyond default limits for comfortable night use.",
+      tags: ["Kotlin", "Jetpack Compose","Android"],
+    },  
+   {
+      title: "FullCleaner",
+      subtitle: "PC Cleaner & antivirus",
+      img: "cleaner.png",
+      href: "https://cleaner.nouvous.com",
+      desc:
+        "FullCleaner is a PC cleaner and antivirus software designed to keep your computer running smoothly and securely.",
+      tags: ["Python", "Tkinter", "React", "Paypal", "Express", "Node", "Postgresql"],
+    },
+  {
+      title: "AllMytab",
+      subtitle: "Your browser on steroids",
+      img: "Allmytab.png",
+      href: "https://allmytab.com",
+      desc:
+        "AllMyTab is a Chrome extension built to enhance the Google experience and help Gen Z interact with the web faster.",
+      tags: ["AI", "Tailwind", "React", "JavaScript", "Drag & Drop", "Firebase"],
+    },
+    // {
+    //   title: "Hisaabkaro",
+    //   subtitle: "An expense management & finance tracker",
+    //   img: "Allmytab.png",
+    //   href: "https://hisaabkaro.com",
+    //   desc:
+    //     "Hisaabkaro makes expense tracking smooth with a clean UI, fast actions, and mobile-first design.",
+    //   tags: ["AI", "Tailwind", "React", "JavaScript", "Firebase"],
+    // },
+    {
+      title: "Cred",
+      subtitle: "Password Manager",
+      img: "Cred.png",
+      href: "https://cred.pizeonfly.com",
+      desc:
+        "Cred is a fast, simple and modern password manager designed for seamless daily use.",
+      tags: ["AI", "Tailwind", "React", "JavaScript", "Firebase"],
+    },
+    {
+      title: "OneSubClick",
+      subtitle: "Convert subtitles into all languages",
+      img: "OneSubClick.png",
+      href: "https://sub.nouvous.com",
+      desc:
+        "Instant subtitle conversion across languages — mobile friendly and blazing fast.",
+      tags: ["AI", "Tailwind", "React", "JavaScript", "Firebase"],
+    },
+    {
+      title: "FindPin",
+      subtitle: "A zip code finder web app",
+      img: "findpin.png",
+      href: "https://findpin.nouvous.com",
+      desc:
+        "FindPin helps users search areas by pincode or find pincodes by area name across USA, India, Canada, and Australia.",
+      tags: ["REST API", "React", "Tailwind", "JavaScript", "HTML", "CSS"],
+    },
+    {
+      title: "PRODHUNT",
+      subtitle: "Chrome Extension",
+      img: "PRODHUNT.png",
+      href:
+        "https://chromewebstore.google.com/detail/prodhunt/giopdckkeeonachenpcafdcomeiocelh",
+      desc:
+        "Stay updated with top Product Hunt listings in one click — titles, descriptions, categories, and links included.",
+      tags: ["Cheerio.js", "Express", "Node", "JavaScript", "HTML", "CSS"],
+    },
+    {
+      title: "FIC",
+      subtitle: "Loan management CRM",
+      img: "Img3.png",
+      href: "https://crm.firstindiacredit.com/",
+      desc:
+        "A full MERN-based CRM for loan management with tracking, status updates and notifications.",
+      tags: ["React", "MongoDB", "Node", "Express", "JWT", "JavaScript", "Tailwind"],
+    },
+    {
+      title: "Carrento",
+      subtitle: "Car rental web app",
+      img: "Img.png",
+      href: "https://carrrento.vercel.app/",
+      desc:
+        "Carrento helps users browse, compare, and book rental cars with a smooth MERN stack experience.",
+      tags: ["React", "MongoDB", "Node", "Express", "JavaScript", "Tailwind"],
+    },
+    // {
+    //   title: "Crypto Wallet",
+    //   subtitle: "A crypto wallet web app",
+    //   img: "Img2.png",
+    //   href: "https://crypto-256.vercel.app/",
+    //   desc:
+    //     "A simple crypto wallet with secure asset storage, transfer, and wallet management.",
+    //   tags: ["React", "MongoDB", "Node", "Express", "JWT", "JavaScript", "Tailwind"],
+    // },
+  ];
 
   return (
     <div className="pt-[8rem] sm:pt-[15rem] relative">
@@ -50,12 +233,55 @@ function App() {
         </div>
       </div>
       {/* FULLSTACK */}
-      <div className="m-auto mt-[6rem] bg-white md:mt-[6rem] rounded-2xl font-medium sm:text-xl sm: w-[90vw] md:text-3xl flex justify-between smd:w-[60vw] items-center py-8 px-10">
+      {/* <div className="m-auto mt-[6rem] bg-white md:mt-[6rem] rounded-xl font-medium sm:text-md sm: w-[90vw] md:text-xl flex justify-between smd:w-[60vw] items-center py-8 px-10">
         <div>FRONTEND</div>
         <div>BACKEND</div>
-        <div>UI/UX</div>
+        <div>DEVOPS</div>
         <div>3D</div>
+           <div>FRONTEND</div>
+        <div>BACKEND</div>
+        <div>DEVOPS</div>
+        <div>3D</div>
+      </div> */}
+
+
+<section
+      aria-labelledby="tech-skills-heading"
+      className={`m-auto mt-24 w-[90vw] sm:w-[60vw] `}
+    >
+      <h2 className={`text-xl  font-semibold mb-4 text-center ${
+            isDarkMode ? "text-white" : "text-black"
+          }`}>
+        Tech Skills
+      </h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        {groups.map((g) => (
+          <div key={g.title} className="space-y-3">
+            <div className={`bg-white rounded-2xl p-4 ${
+        isDarkMode ? "bg-zinc-900 text-gray-100" : "bg-white text-gray-900"
+      } shadow-md`}>
+            <div className="text-sm font-medium uppercase text-center my-6">{g.title}</div>
+            <div className="flex flex-wrap gap-2">
+              {g.items.map((it) => (
+                <span
+                  key={it}
+                  className={`px-3 py-1 rounded-full text-xs sm:text-sm border ${
+                    isDarkMode ? "bg-zinc-800 border-zinc-700" : "bg-zinc-100 border-zinc-200"
+                  }`}
+                  role="listitem"
+                >
+                  {it}
+                </span>
+              ))}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
+
+    </section>
+
       {/* ABOUT */}
       <div id="about" className="flex justify-center">
         <div className="flex justify-between flex-col sm:items-start sm:ml-0 sm:flex-row sm:w-[90vw] smd:w-[60vw] min-h-[18rem]  sm:mt-24 ">
@@ -63,15 +289,13 @@ function App() {
             <h2 className="text-3xl font-semibold">Professional Experience</h2>
             <h4 className="xl:max-w-[43ch] lxl:min-w-[63ch] overflow-y-hidden text-ellipsis mt-4">
               <div className="list-disc list-inside">
-                <li>Over 1 year of experience at PizeonFly</li>
-                <li>Led a team of 4 people</li>
+                <li>Over 2 year of industry experience</li>
+                <li>Leading a team of smart people</li>
                 <li>
-                  Built multiple scalable and production-ready websites and
-                  products
+                  Built multiple production grade products
                 </li>
                 <li>
-                  Built innovative web solutions and exceptional user
-                  experiences
+                  Building side projects at <a href="https://nouvous.com"><span className="hover:decoration-wavy underline underline-offset-2 cursor-pointer">Nouvous</span></a>
                 </li>
               </div>
             </h4>
@@ -81,626 +305,75 @@ function App() {
               </button>
             </div>
           </div>
-          <div className="w-[90vw] sm:w-[32%] bg-zinc-900  h-full rounded-2xl px-8 lg:px-14 py-8 text-white">
-            <h2 className="text-2xl font-medium my-4">Download Resume</h2>
+          <div className={`w-[90vw] sm:w-[32%] bg-zinc-900  h-full rounded-2xl px-8 lg:px-14 py-8 text-white ${
+          isDarkMode ?   "bg-gray-100 text-black":"bg-[#27272A] text-white"
+        }`}>
+            <h2 className="text-2xl font-medium my-4">My Resume</h2>
             <p className="xl:max-w-[40ch] text-zinc-400 overflow-ellipsis">
               Want to know more? Download my resume to know more about me.
             </p>
-            <a href="MDSHARIK_FULLSTACK_DEVELOPER.pdf" download>
-              <button
-                onClick={() => {
-                  console.log("button Clicked");
-                }}
+            <a href="RESUME_MD_SHARIK.pdf" download>
+              <div
+                
                 className="text-white bg-zinc-800 mt-9  p-4 rounded-full px-6"
               >
                 <div className="flex gap-3 items-center">
                   <FaFileDownload />
-                  Resume
+                  Download Resume
                 </div>
-              </button>
+              </div>
             </a>
           </div>
         </div>
       </div>
-      {/* Projects */}
-      <div id="projects">
-        {/* AllMytab */}
-        <div className=" bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
-          <div className="flex justify-between h-[30%] py-10 px-8 bg ">
-            <div className="">
-              <div className="text-3xl font-semibold">AllMytab</div>
-              <div className="text-xl">Your browser on steroids</div>
-            </div>
-            <a href="https://allmytab.com" target="_blank">
-              <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
-                ↗
-              </div>
-            </a>
-          </div>
-          <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
-            <div className="xl:bg-zinc-100 -translate-y-4 z-10 py-8 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
-              <a href="https://allmytab.com" target="_blank">
-                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
-                  <img
-                    width={500}
-                    className="rounded-xl "
-                    src="Allmytab.png"
-                    alt="allmytab"
-                  />
-                </div>
-              </a>
-            </div>
-            <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
-              <div>
-                <h2 className="text-3xl font-semibold mb-2">AllMytab</h2>
-
-                <p className="text-justify truncate smd:text-wrap">
-                  AllMyTab emerged from a simple observation: the digital
-                  generation needed a better way to interact with the world's
-                  most powerful search engine. We set out to create a Chrome
-                  extension that not only enhances the Google experience but
-                  revolutionizes how Gen Z discovers and interacts with
-                  information online.
-                </p>
-
-                <div className="flex flex-wrap mt-4 overflow-y-hidden">
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    AI
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Tailwind
-                  </span>
-
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    React
-                  </span>
-
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    JavaScript
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Drag & Drop
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Firebase
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+      {projectList.map((p) => (
+       <div key={p.title} className="bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] m-auto mt-20 rounded-3xl shadow">
+      {/* Header */}
+      <div className="flex justify-between py-10 px-8">
+        <div>
+          <div className="text-3xl font-semibold">{p.title}</div>
+          <div className="text-xl">{p.subtitle}</div>
         </div>
-        {/* Hisaabkaro */}
-        <div className=" bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
-          <div className="flex justify-between h-[30%] py-10 px-8 bg ">
-            <div className="">
-              <div className="text-3xl font-semibold">Hisaabkaro</div>
-              <div className="text-xl">
-                An expense management and finance tracker
-              </div>
-            </div>
-            <a href="https://hisaabkaro.com" target="_blank">
-              <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
-                ↗
-              </div>
-            </a>
-          </div>
-          <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
-            <div className="xl:bg-zinc-100 -translate-y-4 z-10 py-8 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
-              <a href="https://hisaabkaro.com" target="_blank">
-                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
-                  <img
-                    width={500}
-                    className="rounded-xl "
-                    src="Allmytab.png"
-                    alt="allmytab"
-                  />
-                </div>
-              </a>
-            </div>
-            <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
-              <div>
-                <h2 className="text-3xl font-semibold mb-2">Hisaabkaro</h2>
 
-                <p className="text-justify truncate smd:text-wrap">
-                  AllMyTab emerged from a simple observation: the digital
-                  generation needed a better way to interact with the world's
-                  most powerful search engine. We set out to create a Chrome
-                  extension that not only enhances the Google experience but
-                  revolutionizes how Gen Z discovers and interacts with
-                  information online.
-                </p>
-
-                <div className="flex flex-wrap mt-4 overflow-y-hidden">
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    AI
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Tailwind
-                  </span>
-
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    React
-                  </span>
-
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    JavaScript
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Drag & Drop
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Firebase
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Cred */}
-        <div className=" bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
-          <div className="flex justify-between h-[30%] py-10 px-8 bg ">
-            <div className="">
-              <div className="text-3xl font-semibold">Cred</div>
-              <div className="text-xl">
-                Cred is a simple and powerful tool that lets you easily manage
-                your password.
-              </div>
-            </div>
-            <a href="https://cred.pizeonfly.com" target="_blank">
-              <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
-                ↗
-              </div>
-            </a>
-          </div>
-          <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
-            <div className="xl:bg-zinc-100 -translate-y-4 z-10 py-8 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
-              <a href="https://cred.pizeonfly.com" target="_blank">
-                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
-                  <img
-                    width={500}
-                    className="rounded-xl "
-                    src="Cred.png"
-                    alt="Cred"
-                  />
-                </div>
-              </a>
-            </div>
-            <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
-              <div>
-                <h2 className="text-3xl font-semibold mb-2">Cred</h2>
-
-                <p className="text-justify truncate smd:text-wrap">
-                  Cred is a simple and powerful tool that lets you easily manage
-                  your password. easy to use and fast. Designed for the modern
-                  web. Mobile friendly and responsive.
-                </p>
-
-                <div className="flex flex-wrap mt-4 overflow-y-hidden">
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    AI
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Tailwind
-                  </span>
-
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    React
-                  </span>
-
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    JavaScript
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Drag & Drop
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Firebase
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* One Sub Click */}
-        <div className=" bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
-          <div className="flex justify-between h-[30%] py-10 px-8 bg ">
-            <div className="">
-              <div className="text-3xl font-semibold">One Sub Click</div>
-              <div className="text-xl">
-                Convert one subtitle to all other languages.
-              </div>
-            </div>
-            <a href="https://sub.nouvous.com" target="_blank">
-              <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
-                ↗
-              </div>
-            </a>
-          </div>
-          <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
-            <div className="xl:bg-zinc-100 -translate-y-4 z-10 py-8 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
-              <a href="https://sub.nouvous.com" target="_blank">
-                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
-                  <img
-                    width={500}
-                    className="rounded-xl "
-                    src="OneSubClick.png"
-                    alt="OneSubClick"
-                  />
-                </div>
-              </a>
-            </div>
-            <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
-              <div>
-                <h2 className="text-3xl font-semibold mb-2">OneSubClick</h2>
-
-                <p className="text-justify truncate smd:text-wrap">
-                  OneSubClick is a simple and powerful tool that lets you easily
-                  convert one subtitle to all other languages. easy to use and
-                  fast. Designed for the modern web. Mobile friendly and
-                  responsive.
-                </p>
-
-                <div className="flex flex-wrap mt-4 overflow-y-hidden">
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    AI
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Tailwind
-                  </span>
-
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    React
-                  </span>
-
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    JavaScript
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Drag & Drop
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Firebase
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* FINDPIN */}
-        <div className=" bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
-          <div className="flex justify-between h-[30%] py-10 px-8 bg ">
-            <div className="">
-              <div className="text-3xl font-semibold">FINDPIN</div>
-              <div className="text-xl">A zip code finder web app</div>
-            </div>
-            <a href="https://findpin.nouvous.com" target="_blank">
-              <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
-                ↗
-              </div>
-            </a>
-          </div>
-          <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
-            <div className="xl:bg-zinc-100 -translate-y-4 z-10 py-8 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
-              <a href="https://findpin.nouvous.com" target="_blank">
-                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
-                  <img
-                    width={500}
-                    className="rounded-xl "
-                    src="findpin.png"
-                    alt="findpin"
-                  />
-                </div>
-              </a>
-            </div>
-            <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
-              <div>
-                <h2 className="text-3xl font-semibold mb-2">FINDPIN</h2>
-
-                <p className="text-justify truncate smd:text-wrap">
-                  FindPin is a simple and powerful tool that lets you easily
-                  search areas by pincode or find pincodes by area name.
-                  Covering countries like the USA, India, Canada, and Australia,
-                  FindPin helps you quickly locate regions or postal codes with
-                  just a few clicks.
-                </p>
-
-                <div className="flex flex-wrap mt-4 overflow-y-hidden">
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Rest API
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Tailwind
-                  </span>
-
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    React
-                  </span>
-
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    JavaScript
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    HTML
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    CSS
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* PRODHUNT */}
-        <div className=" bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
-          <div className="flex justify-between h-[30%] py-10 px-8 bg ">
-            <div className="">
-              <div className="text-3xl font-semibold">PRODHUNT</div>
-              <div className="text-xl">Chrome Extension</div>
-            </div>
-            <a
-              href="https://chromewebstore.google.com/detail/prodhunt/giopdckkeeonachenpcafdcomeiocelh"
-              target="_blank"
-            >
-              <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
-                ↗
-              </div>
-            </a>
-          </div>
-          <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
-            <div className="xl:bg-zinc-100 -translate-y-4 z-10 py-8 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
-              <a
-                href="https://chromewebstore.google.com/detail/prodhunt/giopdckkeeonachenpcafdcomeiocelh"
-                target="_blank"
-              >
-                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
-                  <img
-                    width={500}
-                    className="rounded-xl "
-                    src="PRODHUNT.png"
-                    alt="prodhunt"
-                  />
-                </div>
-              </a>
-            </div>
-            <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
-              <div>
-                <h2 className="text-3xl font-semibold mb-2">PRODHUNT</h2>
-
-                <p className="text-justify truncate smd:text-wrap">
-                  prodhunt is a simple and powerful tool that lets you stay
-                  updated with the latest and most popular products from Product
-                  Hunt. With just one click, you can access the top 50 products
-                  of the day, complete with their titles, descriptions,
-                  categories, and direct links to the ProductHunt page.
-                </p>
-
-                <div className="flex flex-wrap mt-4 overflow-y-hidden">
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Cheerio.js
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Express
-                  </span>
-
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Node
-                  </span>
-
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    JavaScript
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    HTML
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    CSS
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* FIC */}
-        <div className="  bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
-          <div className="flex justify-between h-[30%] py-10 px-8 bg ">
-            <div className="">
-              <div className="text-3xl font-semibold">First India Credit</div>
-              <div className="text-xl">A loan management CRM</div>
-            </div>
-            <a href="https://crm.firstindiacredit.com/" target="_blank">
-              <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
-                ↗
-              </div>
-            </a>
-          </div>
-          <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
-            <div className="xl:bg-zinc-100 -translate-y-4 z-10 py-8 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
-              <a href="https://crm.firstindiacredit.com/" target="_blank">
-                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
-                  <img
-                    width={500}
-                    className="rounded-xl "
-                    src="Img3.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </div>
-            <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
-              <div>
-                <h2 className="text-3xl font-semibold mb-2">FIC</h2>
-
-                <p className="text-justify truncate smd:text-wrap">
-                  FIC is a laon management web based CRM app developed on the
-                  MERN stack. It offers users a seamless experience to apply for
-                  loans, check loan status and get notifications. With its user
-                  friendly interface and robust backend infrastructure, FIC
-                  simplifies the loan process & provides a wide selection of
-                  loans.
-                </p>
-
-                <div className="flex flex-wrap mt-4 overflow-y-hidden">
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    React
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    MongoDB
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Node
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Express
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    JavaScript
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    JWT
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Tailwind
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Carrento */}
-        <div className=" bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
-          <div className="flex justify-between h-[30%] py-10 px-8 bg ">
-            <div className="">
-              <div className="text-3xl font-semibold">Carrento</div>
-              <div className="text-xl">A car rental web app</div>
-            </div>
-            <a href="https://carrrento.vercel.app/" target="_blank">
-              <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
-                ↗
-              </div>
-            </a>
-          </div>
-          <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
-            <div className="xl:bg-zinc-100 py-8 -translate-y-4 z-10 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
-              <a href="https://car-rental-chi-tan.vercel.app/" target="_blank">
-                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
-                  <img
-                    width={500}
-                    className="rounded-xl "
-                    src="Img.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </div>
-            <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
-              <div>
-                <h2 className="text-3xl font-semibold mb-2">Car Rental</h2>
-
-                <p className="text-justify truncate smd:text-wrap">
-                  Carrento is a car rental web app developed on the MERN stack.
-                  It offers users a seamless experience to browse, compare, and
-                  book rental cars effortlessly. With its user friendly
-                  interface and robust backend infrastructure, Carrento
-                  simplifies the car rental process, providing a wide selection
-                  of vehicles, flexible booking options.
-                </p>
-
-                <div className="flex flex-wrap mt-4 overflow-y-hidden">
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    React
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    MongoDB
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Node
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Express
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    JavaScript
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Tailwind
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Crypto-256 */}
-        <div className=" bg-white w-[90vw] smd:w-[60vw] min-h-[30rem] smd: m-auto mt-20 rounded-3xl">
-          <div className="flex justify-between h-[30%] py-10 px-8 bg ">
-            <div className="">
-              <div className="text-3xl font-semibold">Crypto-256</div>
-              <div className="text-xl">A crypto wallet web app</div>
-            </div>
-            <a href="https://crypto-256.vercel.app/" target="_blank">
-              <div className="px-7 py-5 border-2 hover:border-black cursor-none rounded-full">
-                ↗
-              </div>
-            </a>
-          </div>
-          <div className=" px-4 pb-3 flex flex-col smd:m-auto  xl:flex-row b h-[70%]  justify-between">
-            <div className="xl:bg-zinc-100 py-8 -translate-y-4 z-10 flex justify-center m-auto lg:m-0 items-center rounded-xl  xl:w-[55%]">
-              <a href="https://crypto-256.vercel.app/" target="_blank">
-                <div className="w-full smd:w-fit  smd:h-fit rounded-lg shadow-2xl ">
-                  <img
-                    width={500}
-                    className="rounded-xl "
-                    src="Img2.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </div>
-            <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 overflow-y-hidden m-auto xl:m-0 -translate-y-4">
-              <div>
-                <h2 className="text-3xl font-semibold mb-2">Crypto Wallet</h2>
-
-                <p className="text-justify truncate smd:text-wrap">
-                  Crypto-256 is a crypto wallet web app built on the MERN stack,
-                  offering a secure platform to store and manage your
-                  cryptocurrency assets. With robust encryption and intuitive
-                  user interface, Crypto-256 provides a seamless experience for
-                  users to securely store, send, and receive various
-                  cryptocurrencies.
-                </p>
-
-                <div className="flex flex-wrap mt-4 overflow-y-hidden">
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    React
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    MongoDB
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Node
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Express
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    JavaScript
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Jwt
-                  </span>
-                  <span className="bg-zinc-100 px-5 py-2 mr-5 rounded-full mb-2 ">
-                    Tailwind
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="https://github.com/MD-Sharik?tab=repositories" target="_blank">
-          <div className="bg-zinc-900 cursor-pointer hover:bg-zinc-800 transition-all hover:font-semibold mt-10 text-white w-[90vw] smd:w-[60vw] m-auto rounded-full h-14 flex justify-center items-center">
-            See All Work
+        <a href={p.href} target="_blank" rel="noopener noreferrer">
+          <div className="px-7 py-5 border-2 hover:border-black cursor-pointer rounded-full">
+            ↗
           </div>
         </a>
       </div>
+
+      {/* Body */}
+      <div className="px-4 pb-3 flex flex-col xl:flex-row justify-between">
+        {/* Preview Image */}
+        <div className="xl:bg-zinc-100 -translate-y-4 z-10 py-8 flex justify-center items-center rounded-xl xl:w-[55%]">
+          <a href={p.href} target="_blank" rel="noopener noreferrer">
+            <div className="w-full smd:w-fit rounded-lg shadow-2xl">
+              <img width={500} className="rounded-xl" src={p.img} alt={p.title} />
+            </div>
+          </a>
+        </div>
+
+        {/* Text */}
+        <div className="w-[98%] mt-8 xl:mt-0 xl:w-[45%] px-4 -translate-y-4">
+          <h2 className="text-3xl font-semibold mb-2">{p.title}</h2>
+          <p className="text-justify smd:text-wrap">{p.desc}</p>
+
+          {/* Tags */}
+          <div className="flex flex-wrap mt-4">
+            {p.tags.map((t) => (
+              <span
+                key={t}
+                className="bg-zinc-100 px-5 py-2 mr-3 mb-2 rounded-full"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+      ))}
+      
       {/* Testimonial */}
       <div
         id="testimonial"
