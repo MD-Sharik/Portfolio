@@ -118,15 +118,15 @@ const projectList = [
         "FullCleaner is a PC cleaner and antivirus software designed to keep your computer running smoothly and securely.",
       tags: ["Python", "Tkinter", "React", "Paypal", "Express", "Node", "Postgresql"],
     },
-  {
-      title: "AllMytab",
-      subtitle: "Your browser on steroids",
-      img: "Allmytab.png",
-      href: "https://allmytab.com",
-      desc:
-        "AllMyTab is a Chrome extension built to enhance the Google experience and help Gen Z interact with the web faster.",
-      tags: ["AI", "Tailwind", "React", "JavaScript", "Drag & Drop", "Firebase"],
-    },
+  // {
+  //     title: "AllMytab",
+  //     subtitle: "Your browser on steroids",
+  //     img: "Allmytab.png",
+  //     href: "https://allmytab.com",
+  //     desc:
+  //       "AllMyTab is a Chrome extension built to enhance the Google experience and help Gen Z interact with the web faster.",
+  //     tags: ["AI", "Tailwind", "React", "JavaScript", "Drag & Drop", "Firebase"],
+  //   },
     // {
     //   title: "Hisaabkaro",
     //   subtitle: "An expense management & finance tracker",
@@ -136,24 +136,24 @@ const projectList = [
     //     "Hisaabkaro makes expense tracking smooth with a clean UI, fast actions, and mobile-first design.",
     //   tags: ["AI", "Tailwind", "React", "JavaScript", "Firebase"],
     // },
-    {
-      title: "Cred",
-      subtitle: "Password Manager",
-      img: "Cred.png",
-      href: "https://cred.pizeonfly.com",
-      desc:
-        "Cred is a fast, simple and modern password manager designed for seamless daily use.",
-      tags: ["AI", "Tailwind", "React", "JavaScript", "Firebase"],
-    },
-    {
-      title: "OneSubClick",
-      subtitle: "Convert subtitles into all languages",
-      img: "OneSubClick.png",
-      href: "https://sub.nouvous.com",
-      desc:
-        "Instant subtitle conversion across languages — mobile friendly and blazing fast.",
-      tags: ["AI", "Tailwind", "React", "JavaScript", "Firebase"],
-    },
+    // {
+    //   title: "Cred",
+    //   subtitle: "Password Manager",
+    //   img: "Cred.png",
+    //   href: "https://cred.pizeonfly.com",
+    //   desc:
+    //     "Cred is a fast, simple and modern password manager designed for seamless daily use.",
+    //   tags: ["AI", "Tailwind", "React", "JavaScript", "Firebase"],
+    // },
+    // {
+    //   title: "OneSubClick",
+    //   subtitle: "Convert subtitles into all languages",
+    //   img: "OneSubClick.png",
+    //   href: "https://sub.nouvous.com",
+    //   desc:
+    //     "Instant subtitle conversion across languages — mobile friendly and blazing fast.",
+    //   tags: ["AI", "Tailwind", "React", "JavaScript", "Firebase"],
+    // },
     {
       title: "FindPin",
       subtitle: "A zip code finder web app",
@@ -173,15 +173,15 @@ const projectList = [
         "Stay updated with top Product Hunt listings in one click — titles, descriptions, categories, and links included.",
       tags: ["Cheerio.js", "Express", "Node", "JavaScript", "HTML", "CSS"],
     },
-    {
-      title: "FIC",
-      subtitle: "Loan management CRM",
-      img: "Img3.png",
-      href: "https://crm.firstindiacredit.com/",
-      desc:
-        "A full MERN-based CRM for loan management with tracking, status updates and notifications.",
-      tags: ["React", "MongoDB", "Node", "Express", "JWT", "JavaScript", "Tailwind"],
-    },
+    // {
+    //   title: "FIC",
+    //   subtitle: "Loan management CRM",
+    //   img: "Img3.png",
+    //   href: "https://crm.firstindiacredit.com/",
+    //   desc:
+    //     "A full MERN-based CRM for loan management with tracking, status updates and notifications.",
+    //   tags: ["React", "MongoDB", "Node", "Express", "JWT", "JavaScript", "Tailwind"],
+    // },
     {
       title: "Carrento",
       subtitle: "Car rental web app",
@@ -191,15 +191,15 @@ const projectList = [
         "Carrento helps users browse, compare, and book rental cars with a smooth MERN stack experience.",
       tags: ["React", "MongoDB", "Node", "Express", "JavaScript", "Tailwind"],
     },
-    // {
-    //   title: "Crypto Wallet",
-    //   subtitle: "A crypto wallet web app",
-    //   img: "Img2.png",
-    //   href: "https://crypto-256.vercel.app/",
-    //   desc:
-    //     "A simple crypto wallet with secure asset storage, transfer, and wallet management.",
-    //   tags: ["React", "MongoDB", "Node", "Express", "JWT", "JavaScript", "Tailwind"],
-    // },
+    {
+      title: "Crypto Wallet",
+      subtitle: "A crypto wallet web app",
+      img: "Img2.png",
+      href: "https://crypto-256.vercel.app/",
+      desc:
+        "A simple crypto wallet with secure asset storage, transfer, and wallet management.",
+      tags: ["React", "MongoDB", "Node", "Express", "JWT", "JavaScript", "Tailwind"],
+    },
   ];
 
   return (
